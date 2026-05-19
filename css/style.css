@@ -5,17 +5,114 @@
   
   /* Text & Dividers */
   --text-primary: #FFFFFF;  /* Crisp white for headings */
-  --text-muted: #B8B8FF;     /* Lavender: Sleek text and subtle lines */
+  --text-muted: #B8B8FF;    /* Lavender: Sleek text and subtle lines */
   
   /* Holographic Accents */
   --accent-primary: #FF4FD8; /* Magenta: Call-to-action highlights */
   --accent-success: #2EF9B6; /* Mint: Sparse micro-accents and metrics */
 }
 
+.resume-container {
+    display: flex;  /* Turns on flexbox layout */
+    gap: 24px;      /* Puts space between the columns */
+}
+
+.sidebar {
+    flex: 1;        /* Takes up 1 share of space (narrow) */
+    background: var(--bg-surface);  /* Uses your slate color */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar-title {
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.main-content {
+    flex: 2;        /* Takes up 2 shares of space (wider) */
+    background: var(--bg-surface);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.resume-header {
+    /* Using theme variables */
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    padding: 40px 20px 80px 20px;
+
+    /* Creates the diagonal point cut */
+    /* Coordinates: Top-Left, Top-Right, Bottom-Right, Point, Bottom-Left */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 25% 100%, 0% 85%);
+}
+
+/* Flex layout keeps the image and text side-by-side inside the header */
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 600px; /* Matches body width */
+    margin: 0 auto;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Makes the photo a perfect circle */
+    border: 3px solid var(--accent-primary); /* Optional holographic ring */
+}
+
+/* Container spacing between different jobs */
+.job-entry {
+    margin-bottom: 28px;
+}
+
+/* "DevOps, Google Cloud Platform" */
+.job-title {
+    color: var(--text-primary); /* Crisp White */
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 4px; /* Brings the date close underneath it */
+}
+
+/* "March 2023 - Present" */
+.job-date {
+    display: block; /* Forces the date onto its own line */
+    color: var(--text-muted); /* Lavender */
+    opacity: 0.7; /* Makes it slightly faded and low-profile */
+    font-size: 0.85rem;
+    margin-bottom: 12px; /* Adds breathing room before the list starts */
+}
+
+/* The Bulleted List Container */
+.job-responsibilities {
+    margin: 0;
+    padding-left: 20px; /* Indents the bullets nicely */
+    list-style-type: disc; /* Forces standard round bullet points */
+}
+
+/* Individual Bullet Points */
+.job-responsibilities li {
+    color: var(--text-muted); /* Comfortable reading lavender */
+    font-size: 0.95rem;
+    line-height: 1.6; /* Prevents text rows from crushing together */
+    margin-bottom: 8px; /* Adds space between each separate bullet point */
+}
+
+.section-divider {
+    border: none;
+    border-top: 1px solid var(--text-muted); /* Solid Lavender */
+    width: 100%;
+    margin: 8px 0 12px 0;
+}
+
 body {
     font-family: sans-serif;
-    max-width: 600px;
-    margin: 80px auto;
+    max-width: 1000px;
+    width: 90%;
+    margin: 60px auto;
     
     /* Updated for the sleek noir mood */
     background: var(--bg-main);
@@ -23,6 +120,21 @@ body {
 }
 
 h1 {
-    /* Updated from blue to holographic magenta */
+    color: var(--accent-primary);
+}
+
+h2, h3, h4 {
+    color: var(--text-primary);
+    margin-bottom: 0;
+}
+
+p, li {
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-top: 0;
+}
+
+.special-highlight-text {
     color: var(--accent-primary);
 }
