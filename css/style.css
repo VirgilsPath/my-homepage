@@ -1,0 +1,28 @@
+:root {
+  /* Structure Colors */
+  --bg-main: #0A0F1E;       /* Indigo-black: Deep background */
+  --bg-surface: #2A2F45;    /* Slate: Glassy card/header background */
+  
+  /* Text & Dividers */
+  --text-primary: #FFFFFF;  /* Crisp white for headings */
+  --text-muted: #B8B8FF;     /* Lavender: Sleek text and subtle lines */
+  
+  /* Holographic Accents */
+  --accent-primary: #FF4FD8; /* Magenta: Call-to-action highlights */
+  --accent-success: #2EF9B6; /* Mint: Sparse micro-accents and metrics */
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: 80px auto;
+    
+    /* Updated for the sleek noir mood */
+    background: var(--bg-main);
+    color: var(--text-muted);
+}
+
+h1 {
+    /* Updated from blue to holographic magenta */
+    color: var(--accent-primary);
+}
