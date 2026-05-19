@@ -6,11 +6,12 @@
         <title>My Homepage</title>
         <meta name="description" content="My webpage that I&#39;m building to get better at DevOps and coding" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     </head>
     <body>
         <header class="resume-header">
             <div class="header-content">
-                <!-- <img src="avatar.jpg" alt="Berna Pagac" class="avatar"> -->
+                <img src="images/profile.png" alt="My Profile Photo" class="avatar">
                 <div class="header-text">
                     <h1>Miguel Angel Hernandez</h1>
                     <p>
@@ -22,26 +23,35 @@
         <div class="resume-container">
             <aside class="sidebar">
                 <h3 class="sidebar-title">Contact Details</h3>
-                <ul>
-
+                <ul class="contact-list">
+                    <li>
+                        <i class="fa-solid fa-envelope contact-icon"></i>
+                        <a href="mailto:migahernandez2392@gmail.com">migahernandez2392@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone contact-icon"></i>
+                        <span>(773) 875 6567</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot contact-icon"></i>
+                        <span>Westmont, 60559, Illinois</span>
+                    </li>
                 </ul>
                 <h3 class="sidebar-title">Education</h3>
-                <div>
-                    <ul>
-                        <li>
-                            Pursuing A Bachelor of Arts (BA) in Mathematics<br />
-                            Northeastern Illinois University, Chicago<br />
-                            Aug 2023 - Present
-                        </li>
-                    </ul>
-                </div>
+                <ul class="education-list">
+                    <li>
+                        <strong class="edu-degree">Pursuing A Bachelor of Arts (BA) in Mathematics</strong>
+                        <span class="edu-school">Northeastern Illinois University, Chicago</span>
+                        <span class="edu-date">Aug 2023 - Present</span>
+                    </li>
+                </ul>
                 <h3 class="sidebar-title">Skills</h3>
-                <div>
-                    <p>Languages: Python, SQL</p>
-                    <p>Frameworks & Libraries: Matplotlib, Pandas, Pygame, JSON, Pathlib/OS</p>
-                    <p>Paradigms & Concepts: Object-Oriented Programming (OOP), Functional Programming (FP), Relational Database Design, Data Visualization, State Management, Automation</p>
-                    <p>Developer Tools: Git, GitHub, VS Code</p>
-                </div>
+                <ul class="skills-list">
+                    <li><strong>Languages:</strong> Python, SQL</li>
+                    <li><strong>Frameworks & Libraries:</strong> Matplotlib, Pandas, Pygame, JSON, Pathlib/OS</li>
+                    <li><strong>Paradigms & Concepts:</strong> Object-Oriented Programming (OOP), Functional Programming (FP), Relational Database Design, Data Visualization, State Management, Automation</li>
+                    <li><strong>Developer Tools:</strong> Git, GitHub, VS Code</li>
+                </ul>
             </aside>
             <main class="main-content">
                 <h3 class="main-content-title">Summary</h3>
